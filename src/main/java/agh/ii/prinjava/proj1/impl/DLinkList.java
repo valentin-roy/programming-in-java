@@ -16,6 +16,10 @@ public class DLinkList<E> {
         }
     }
 
+    /**
+     *get functions to do the UnitTests and get the head,tail and length
+     */
+
     public E getHead() {
         if (length == 0){
             return null;
@@ -34,12 +38,18 @@ public class DLinkList<E> {
         return this.length;
     }
 
-
+    /**
+     * function to check if the list is empty
+     */
     public boolean isEmpty(){
         if (length == 0)
             return true;
         return false;
     }
+
+    /**
+     * function to add an element at the beginning of the list
+     */
 
     void addFirst(E data){
         Node<E> begin = new Node<E>(data);
@@ -53,6 +63,10 @@ public class DLinkList<E> {
         head = begin;
     }
 
+
+    /**
+     * function to add an element at the end of the list
+     */
     void addLast(E data){
         length++;
         Node <E> end = new Node<E>(data);
@@ -66,6 +80,9 @@ public class DLinkList<E> {
         tail = end;
     }
 
+    /**
+     * function to delete an element at the beginning of the list
+     */
     E removeFirst(){
         if (isEmpty()){
             return null;
@@ -76,6 +93,9 @@ public class DLinkList<E> {
         return value;
     }
 
+    /**
+     * function to delete an element at the end of the list
+     */
     E removeLast(){
         if (isEmpty()){
             return null;
@@ -106,6 +126,9 @@ public class DLinkList<E> {
         }
     }
 
+    /**
+     * function to get the number of element
+     */
     int numberofelem(){
         return length;
     }

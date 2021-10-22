@@ -6,18 +6,25 @@ public class MyStackDLLBImpl<E> implements MyStack<E> {
     private DLinkList<E> elems = new DLinkList<>();
 
     /**
-     *
-     * @return
+     * function to remove an element at the beginning of the stack
      */
+
     @Override
     public E pop() {
         return elems.removeFirst();
     }
 
+    /**
+     * function to add an element at the end of the stack
+     */
     @Override
     public void push(E x) {
         elems.addFirst(x);
     }
+
+    /**
+     * function to get the number of elements of the stack
+     */
 
     @Override
     public int numOfElems() {
