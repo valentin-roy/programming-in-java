@@ -18,6 +18,9 @@ class MyQueueDLLBImplTest {
     void tearDown() {
     }
 
+    /**
+     * we enqueue some elements and then we dequeue elements and check the values returned
+     */
     @Test
     void enqueue() {
         queueOfInts.enqueue(1);
@@ -25,6 +28,10 @@ class MyQueueDLLBImplTest {
         queueOfInts.enqueue(2);
         assertEquals(2, queueOfInts.peek());
     }
+
+    /**
+     * we enqueue some elements and then we dequeue elements and check the values returned
+     */
 
     @Test
     void dequeue() {
